@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{margin: 0 auto; padding: 0;  font-family: 'Pretendard-Regular'}
+li{list-style: none;}
+em,i,address{font-style: normal;}
+a{text-decoration: none; color: inherit;}
+table{border-collapse: collapse;}
+textarea{resize: none;}
+
+
+
+#top {height: 920px; width: 100%; background:url("../img/header-bg2.jpg")no-repeat top; background-size: cover; font-size: 15px; color: #fff;}
+#top .top_container {height: 920px; opacity: 1;}/*메인 배경(헤더~메인)*/
+#top .top_container header{height: 90px; border-bottom: 1px solid rgba(255,255,255,.2); background-color: rgba(0,0,0,.3);}/*헤더 밑줄*/ 
+#top .top_container header nav{position: relative; width: 1120px;}/*nav 영역*/
+#top .top_container header nav .aside_container{display: flex; justify-content: space-between; padding-top: 10px; color: #888;}
+#top .top_container header nav .aside_container aside{display: flex; justify-content: space-between; width: 250px; margin: 0;}
+#top .top_container header nav .aside_container aside:first-of-type{}
+#top .top_container header nav .aside_container aside:last-of-type{}
+#top .top_container header nav .aside_container aside:last-of-type a{}
+#top .top_container header nav .aside_container aside a:hover{text-decoration: underline;}
+#top .top_container header nav .menu{display: flex; height: 70px;margin: 0; clear: both; font-size: 20px;}
+#top .top_container header nav .menu ul{padding: 0; padding-top: 25px; margin: 0;}
+#top .top_container header nav .menu ul:first-of-type{width: 10%;}
+#top .top_container header nav .menu ul:first-of-type li{width: 36px; height: 36px; text-align: center;}
+#top .top_container header nav .menu ul:nth-of-type(2){display: flex; justify-content: space-around; width: 40%; margin-right: 90px;}
+#top .top_container header nav .menu ul:nth-of-type(3){display: flex; justify-content: space-around; width: 40%; margin-left: 90px;}
+#top .top_container header nav .menu ul:last-of-type{display: flex; justify-content: flex-end; width: 10%;}
+#top .top_container header nav .menu ul:last-of-type li:last-of-type{width: 36px; height: 36px; text-align: center;}
+#top .top_container header nav .menu ul li{float: left;}
+#top .top_container header nav .menu ul li a{}
+#top .top_container header nav h1{position: absolute; top: 30%; left: 44%;}
+
+#footer_bg{width: 100%; background: #f8f8fa;}
+footer{clear: both; width: 1120px; height: 175px; margin: 0 auto; padding-top: 40px;}
+footer .footer_top{width: 1120px; height: 50px; font-size: 13px;}
+footer .footer_top ul{}
+footer .footer_top ul li{float: left; padding-right: 15px; color: #666666}
+footer .footer_top ul li:nth-of-type(6){color:#222222;}
+footer .footer_top ul li a{}
+footer .footer_top button{float:right; width: 106px; height: 30px; border: 1px solid #d8d9db; border-radius: 45px; color: #666666; cursor: pointer;}
+footer .footer_bottom{width: 1120px; height: 125px;}
+footer .footer_bottom h2{float: left; width: 165px;}
+footer .footer_bottom address{float: left; text-align: left; font-size: 13px; color: #444444;}
+footer .footer_bottom ul.sns{float: right; height: 80px;}
+footer .footer_bottom ul.sns li{float: left; padding: 0 3px;}
+footer .footer_bottom ul.sns li img{}
+
+
+
+#skip{z-index: 2; position: absolute; left: 0; top: 0; width: 100%}   /*tab누를시 나오는 skip*/
+#skip li{width: 100%;}
+#skip li a{display: block; width: 100%; line-height: 0; font-size: 0; text-align: center; color: #FFFFFF; background: #000;}
+#skip li a:focus{line-height:50px; font-size: 17px;}
+
+

@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+ header{height: 90px; border-bottom: 1px solid #351f67; background-color: #FFFFFF;}/*헤더 밑줄*/ 
+ header nav{position: relative; width: 1120px;}/*nav 영역*/
+ header nav .aside_container{display: flex; justify-content: space-between; padding-top: 10px; color: #444;}
+ header nav .aside_container aside{display: flex; justify-content: space-between; width: 250px; margin: 0;}
+ header nav .aside_container aside:first-of-type{}
+ header nav .aside_container aside:last-of-type{}
+ header nav .aside_container aside:last-of-type a{}
+ header nav .aside_container aside a:hover{text-decoration: underline;}
+ header nav .menu{display: flex; height: 70px;margin: 0; clear: both; font-size: 20px;}
+ header nav .menu ul{padding: 0; padding-top: 25px; margin: 0;}
+ header nav .menu ul:first-of-type{width: 10%;}
+ header nav .menu ul:first-of-type li{width: 36px; height: 36px; text-align: center;}
+ header nav .menu ul:nth-of-type(2){display: flex; justify-content: space-around; width: 40%; margin-right: 90px;}
+ header nav .menu ul:nth-of-type(3){display: flex; justify-content: space-around; width: 40%; margin-left: 90px;}
+ header nav .menu ul:last-of-type{display: flex; justify-content: flex-end; width: 10%;}
+ header nav .menu ul:last-of-type li:last-of-type{width: 40px; height: 36px; text-align: center;}
+ header nav .menu ul li{float: left;}
+ header nav .menu ul li a{}
+ header nav h1{position: absolute; top: 30%; left: 44%;}
+
+#page_nav{position: sticky; top: 0; z-index: 20000; height: 42px; background-color: #f8f8fa;}
+#page_nav:ac{background-color: white;}
+#page_nav p{position: relative; width: 1120px; line-height: 42px;}
+#page_nav p a{float: left; display: inline-block; width: 70px; color: #666;}
+#page_nav p a:first-of-type{float: left; display: inline-block; width: 30px;}
+#page_nav p a:nth-of-type(2){float: left; display: inline-block; width: 45px;}
+#page_nav p a:first-of-type::after{position: absolute; top: 16px; left: 15px; background-image:url("../img/bg-location-arr.png"); content: ""; width: 10px; height: 10px; background-size: 100% 100%;}
+#page_nav p a:nth-of-type(2)::after{position: absolute; top: 16px; left: 62px; background-image:url("../img/bg-location-arr.png"); content: ""; width: 10px; height: 10px; background-size: 100% 100%;}
+#page_nav p a:hover{text-decoration: underline;}
+
+#page_nav.active {
+background: #CEC1E4;
+}
+
+	main{}
+		
+		main .BG{height: 330px; background: url("../img/bg-movie-post-top.png") no-repeat top;}
+		main .postbox{position: relative; width: 1120px; height: 330px;}
+		main .postbox h3{float: left; margin-top: 20px; font-size: 30px; font-weight: normal;}
+		main .postbox button{margin-top: 20px; float: right; width: 130px; height: 35px; background: #503396; color: white; font-size: 16px; 
+							border: none; border-radius: 5px;}
+		main .postbox button:hover{background: #352264;}
+		main .postbox ul{position: absolute; top: 70px; left: 0; }
+		main .postbox ul li{float: left; margin-right: 62px;}
+		main .postbox ul li:last-of-type{margin: 0; line-height: 24px;}
+		main .postbox ul li:last-of-type{margin: 0; line-height: 24px;}
+		main .postbox ul li a{}
+		main .postbox ul li a img{position: relative; width: 135px; height: 196px;}
+		main .postbox ul li a .darkbox{position: absolute; top: 0; width: 135px; height: 196px; background: rgba(0,0,0,0.5); text-align: center; color: white;}
+		main .postbox ul li a .darkbox:hover{opacity: 0;}
+		main .postbox ul li:last-of-type a .darkbox:hover{opacity: 1;}
+		main .postbox ul li a p{margin-top: 65px;}
+		main .postbox ul li a i{font-size: 34px; font-weight: normal;}
+		main .postbox ul li a span{display: inline-block; font-size: 14px; font-weight: normal; border-bottom: 1px solid #fff;}
+		
+		main .po_list{width: 1120px; height: 1524px;}
+		main .po_list .botton_box{position: relative; height: 120px;}
+		main .po_list .botton_box .bo_t{text-align: center; padding: 20px 0;}
+		main .po_list .botton_box .bo_t a{padding: 0 10px; font-size: 18px; border-right: 1px solid #4f4f4f4;}
+		main .po_list .botton_box .bo_t a:first-of-type{padding-right: 15px;}
+		main .po_list .botton_box .bo_t a:last-of-type{border: none;}
+		main .po_list .botton_box .bo_t a:hover{border-bottom: 1px solid #503396; color: #503396;}
+		
+		main .po_list .botton_box .bo_b{display:inline-block; width: 1120px; padding-top: 24px;}
+		main .po_list .botton_box .bo_b strong{float: left; margin-top: 10px; font-weight: normal;}
+		main .po_list .botton_box .bo_b strong b{color: #01738b; font-weight: normal;}
+		main .po_list .botton_box .bo_b .search{float: right; width: 330px; }
+		main .po_list .botton_box .bo_b .search a{float: left; margin: 7px;}
+		main .po_list .botton_box .bo_b .search .seachbox{float: left; margin-left: 10px; background: white; border: 1px solid #ccc; border-radius: 4px;}
+		main .po_list .botton_box .bo_b .search .seachbox input{width: 160px; height: 30px; margin-left: 10px; border: none;}
+		main .po_list .botton_box .bo_b .search .seachbox button{float: right; width: 30px; height: 30px; margin-top: 2px; background: white; border: none; cursor: pointer;}
+		
+		main .po_list ul{display: flex; justify-content: space-between; flex-wrap: wrap; width: 1120px; height: 1280px; margin: 0; margin-top: 50px;}
+		main .po_list ul li{position: relative; width: 230px; height: 370px; margin: 0; background: white; border: 1px solid #ccc; border-radius: 10px;}
+		main .po_list ul li .img_box{display: block; width: 230px; height: 150px; }
+		main .po_list ul li .img_box img{width: 100%; height: 150px; object-fit:cover; border-radius: 10px 10px 0 0;}
+		main .po_list ul li .user{display: block; margin: 20px 0 0 10px;}
+		main .po_list ul li .movie{display: block; margin: 20px 0 0 10px;}
+		main .po_list ul li .mo_post{display: block; width: 200px; margin: 20px 0 0 10px;}
+		main .po_list ul li .but{position: absolute; bottom: 0; width: 230px; height: 50px; margin: 20px 0 0 10px;}
+		main .po_list ul li .but button{float: left; background: none; border: none; cursor: pointer;}
+		main .po_list ul li .but p{float: left; margin: 0 10px 0 5px;}
+		
+		main .po_list .post_etc{display: block; width: 1120px; height: 30px; text-align: center; border-bottom: 1px solid #ccc;}
+		main .po_list .post_etc:hover{border-bottom: 1px solid #4B4B4B;}
+		main .po_list .post_etc img{padding-left: 5px;}
+		
+		#btn_area{position: absolute; top: 350px; right: 280px; width: 50px; height: 1500px;}
+		#btn_area .top_btn{float: right; position: sticky; top: 800px; z-index: 1000; color: #000;}/********/
+
+

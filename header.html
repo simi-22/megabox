@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>무제 문서</title>
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/swiper.min.css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	
+	<link rel="shortcut icon" href="#">
+<style>
+	#top{height: 920px; background:url("img/header-bg2.jpg")no-repeat top; font-size: 15px; color: #fff;}
+	#top .top_container {height: 920px; opacity: 1;}/*메인 배경(헤더~메인)*/
+	#top .top_container header{height: 90px; border-bottom: 1px solid rgba(255,255,255,.2); background-color: rgba(0,0,0,.3);}/*헤더 밑줄*/ 
+	#top .top_container header nav{position: relative; width: 1120px;}/*nav 영역*/
+	#top .top_container header nav .aside_container{display: flex; justify-content: space-between; padding-top: 10px; color: #888;}
+	#top .top_container header nav .aside_container aside{display: flex; justify-content: space-between; width: 250px; margin: 0;}
+	#top .top_container header nav .aside_container aside:first-of-type{}
+	#top .top_container header nav .aside_container aside:last-of-type{}
+	#top .top_container header nav .aside_container aside:last-of-type a{}
+	#top .top_container header nav .aside_container aside a:hover{text-decoration: underline;}
+	#top .top_container header nav .menu{display: flex; height: 70px;margin: 0; padding: 0; clear: both; font-size: 20px;}
+	#top .top_container header nav .menu ul{padding: 0; padding-top: 25px; margin: 0;}
+	#top .top_container header nav .menu ul:first-of-type{width: 10%;}
+	#top .top_container header nav .menu ul:first-of-type li{width: 36px; height: 36px; text-align: center;}
+	#top .top_container header nav .menu ul:nth-of-type(2){display: flex; justify-content: space-around; width: 40%; margin-right: 90px;}
+	#top .top_container header nav .menu ul:nth-of-type(3){display: flex; justify-content: space-around; width: 40%; margin-left: 90px;}
+	#top .top_container header nav .menu ul:last-of-type{display: flex; justify-content: flex-end; width: 10%;}
+	#top .top_container header nav .menu ul:last-of-type li:last-of-type{width: 36px; height: 36px; text-align: center;}
+	#top .top_container header nav .menu ul li{float: left;}
+	#top .top_container header nav .menu ul li a{}
+	#top .top_container header nav h1{position: absolute; top: 30%; left: 44%;}
+	
+	
+	#top .top_container .top_main_container{position: relative; width: 1120px; height: 830px;}/*메인 영역*/
+	#top .top_container .top_main_container h2{width: 70px; height: 25px; padding-top: 50px; text-align: center;font-size: 15px; border-bottom: 2px solid rgba(255,255,255,0.2);}
+	#top .top_container .top_main_container .t_more {position: absolute; top:50px; right: 25px; color: #aaa;}
+	#top .top_container .top_main_container .t_more:hover {text-decoration: underline;}
+	#top .top_container .top_main_container .t_more a{}
+	#top .top_container .top_main_container .t_more a i{}
+	#top .top_container .top_main_container ul{display: flex; justify-content: space-between; width: 1110px; height: 410px; margin: 0 auto; padding: 0; padding-top: 20px;}
+	#top .top_container .top_main_container ul li{width: 250px; height: 410px;}
+	#top .top_container .top_main_container ul li dl{}
+	#top .top_container .top_main_container ul li dl dt{position: relative;}
+	#top .top_container .top_main_container ul li dl dt:hover .m_hov{opacity: 1;}
+	#top .top_container .top_main_container ul li dl dt img{width: 245px; height: 352px;}
+	#top .top_container .top_main_container ul li dl dt p{position: absolute; top: 10px; width: 245px; height: 352px;}
+	#top .top_container .top_main_container ul li dl dt p.m_rank{ left: 10px; font-size: 35px; font-style: italic; text-shadow: 2px 2px 2px rgb(0 0 0 / 80%);}
+	#top .top_container .top_main_container ul li dl dt p.m_db{right: 50px; width: 61px; height: 35px; background-color: rgba(0,0,0,0.6); border-radius: 5px; text-align: center; line-height: 45px;}
+	#top .top_container .top_main_container ul li dl dt p.m_mx{right: 10px; width: 34px; height: 34px; background-color: rgba(0,0,0,0.6); border-radius: 5px; text-align: center; line-height: 40px;}
+	#top .top_container .top_main_container ul li dl dt p.m_hov{position: absolute; top: 0; left: 0; width: 205px; height: 312px; padding: 20px; background-color: rgba(0,0,0,.8); opacity: 0;}
+	#top .top_container .top_main_container ul li dl dt p.m_hov span{display: inline-block; width: 205px; height: 262px; margin: 0 auto;}
+	#top .top_container .top_main_container ul li dl dt p.m_hov>span:last-of-type{width: 205px; height: 50px; padding-top: 5px; border-top: 1px solid rgba(255,255,255,.2); text-align: center;}
+	#top .top_container .top_main_container ul li dl dt p.m_hov span:last-of-type span{display: inline; font-size: 14px;}
+	#top .top_container .top_main_container ul li dl dt p.m_hov span:last-of-type span span{display: inline; font-size: 30px; color:#037b94;}
+	#top .top_container .top_main_container ul li dl dt p.m_db img{width: 45px; height: 19px;}
+	#top .top_container .top_main_container ul li dl dt p.m_mx img{width: 20px; height: 19px;}
+	#top .top_container .top_main_container ul li dl dd{position: relative; width:  245px; height: 36px;}
+	#top .top_container .top_main_container ul li dl dd button{position: absolute; top: 0; left: 0; width: 80px; height: 36px;line-height: 36px; background: none; border: 1px solid #555; border-radius: 4px; cursor: pointer;}
+	#top .top_container .top_main_container ul li dl dd button img{float: left; padding-left: 5px;}
+	#top .top_container .top_main_container ul li dl dd button span{font-size: 17px; color: #fff;}
+	#top .top_container .top_main_container ul li dl dd a{display: inline-block; width: 160px; margin: 0; margin-left: 85px; height: 36px; line-height: 36px; text-align: center;  border-radius: 4px; background: #037b94;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#top .top_container .top_main_container .search_box{height: 75px; width: 1110px; margin-top: 50px; background-color: rgba(0,0,0,0.2);}
+	#top .top_container .top_main_container .search_box li{position: relative; display: flex; justify-content: space-around; width: 275px; height: 30px; padding-top: 15px; border-left: 1px solid #aaa;}
+	#top .top_container .top_main_container .search_box li:first-of-type{border: none;}
+	#top .top_container .top_main_container .search_box li input{padding-left: 10px; font-size: 15px; outline: none; border: none; border-bottom: 1px solid #aaa; background: none; color: white;}
+	#top .top_container .top_main_container .search_box li button{background: none; border: none; cursor: pointer;}
+	#top .top_container .top_main_container .search_box li button img{position: absolute; top: 20px; left: 200px;}
+	#top .top_container .top_main_container .search_box li a {display: flex; align-items: center;}
+	#top .top_container .top_main_container .search_box li a:hover {text-decoration: underline;}
+	#top .top_container .top_main_container .search_box li a img{padding-right: 10px;}
+	#top .top_container .top_main_container .search_box li a span{height: 20px;}
+	
+	#top .top_container .top_main_container i{display: block; width: 20px; margin-top: 50px; animation: bounce 0.5s alternate infinite;}
+	
+	@keyframes bounce{
+		from{transform:translate(0,0);}
+		to{transform: translate(0,-15px);}
+	}
+	
+	
+	
+	
+	</style>
+</head>
+
+	
+<body>	
+<section id="top">
+	<div class="top_container">
+		<header>
+			<nav>
+				<div class="aside_container">
+					<aside>
+						<a href="#">VIP ROUNGE</a>
+						<a href="#">멤버십</a>
+						<a href="#">고객센터</a>
+					</aside>
+					<aside>
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+						<a href="#">빠른예매</a>
+					</aside>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#"><img src="img/ico-sitemap-white.png" alt="메뉴바 아이콘"></a></li>
+						<li><a href="#"><img src="img/ico-search-white.png" alt="돋보기 아이콘"></a></li>
+					</ul>
+					<ul>
+						<li><a href="#">영화</a></li>
+						<li><a href="#">예매</a></li>
+						<li><a href="#">극장</a></li>
+					</ul>
+					
+					<ul>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">스토어</a></li>
+						<li><a href="#">혜택</a></li>
+					</ul>
+					
+					<ul>
+						<li><a href="#"><img src="img/ico-schedule.png" alt="스케줄 아이콘"></a></li>
+						<li><a href="#"><img src="img/ico-mymega-white.png" alt="마이 메가박스 아이콘"></a></li>
+					</ul>
+				</div>
+				<h1><a href="#"><img src="img/logo-white_new2.png" alt="로고"></a></h1>
+				
+			</nav>
+		</header>
+		
+		<div class="top_main_container">
+		
+			<h2>박스오피스</h2>
+			<a class="t_more">더 많은 영화보기
+				
+					<img src="img/ico-more-cross-gray.png" alt="더보기">
+				
+			
+			</a>
+			
+			<ul>
+			<li>
+				<dl>
+					<dt>
+						<img src="img/스즈메의_문단속.jpg" alt="스즈메의 문단속">
+						<p class="m_rank">1</p>
+						<p class="m_db"><img src="img/mov_top_tag_db.png" alt="돌비"></p>
+						<p class="m_mx"><img src="img/mov_top_tag_mx.png" alt="mx"></p>
+						<p class="m_hov">
+							<span>"이 근처에 폐허 없니? 문을 찾고 있어"<br>
+								규수의 한적한 마을에 살고 있는 소녀'스즈메'는<br>
+								문을 찾아 여행 중인 청년 '소타'를 만난다.
+							</span>
+							<span>
+								<span>관람평 <span>8.9</span></span>
+							</span>
+						</p>
+					</dt>
+					<dd>
+						<button type="button"><img src="img/ico-heart-white.png" alt="하트"> <span>4.1k</span></button>
+						<a href="#">예매</a>
+					</dd>
+				</dl>
+			</li>
+			
+			<li>
+				<dl>
+					<dt>
+						<img src="img/더_퍼스트_슬램덩크_포스터.jpg" alt="더퍼스트 슬램덩크">
+						<p class="m_rank">2</p>
+						<p class="m_db"><img src="img/mov_top_tag_db.png" alt="돌비"></p>
+						<p class="m_mx"><img src="img/mov_top_tag_mx.png" alt="mx"></p>
+						<p class="m_hov">
+							<span>전국 재패를 꿈꾸는 북산고 농구
+								부 5인방의 꿈과 열정, 멈추지 않
+								는 도전을 그린 영화
+							</span>
+							<span>
+								<span>관람평 <span>9.5</span></span>
+							</span>
+						</p>
+					</dt>
+					<dd>
+						<button type="button"><img src="img/ico-heart-white.png" alt="하트"><span>4.3k</span></button>
+						<a href="#">예매</a>
+					</dd>
+				</dl>
+			</li>
+			
+			<li>
+				<dl>
+					<dt>
+						<img src="img/soulmate.jpg" alt="소울메이트">
+						<p class="m_rank">3</p>
+						<p class="m_mx"><img src="img/mov_top_tag_mx.png" alt="mx"></p>
+						<p class="m_hov">
+							<span>"날도 더웠고 수업도 지루했고..
+								그렇게 졸리고 나른하던 날에 너를 처음 만났어"<br>
+								1998년, 처음만났다<br>
+								<br>
+								"누굴 좋아하면 용기내야 된대"<br>
+								2004년, 첫사랑이 생겼다
+							</span>
+							<span>
+								<span>관람평 <span>8.9</span></span>
+							</span>
+						</p>
+					</dt>
+					<dd>
+						<button type="button"><img src="img/ico-heart-white.png" alt="하트"> <span>485</span></button>
+						<a href="#">예매</a>
+					</dd>
+				</dl>
+			</li>
+			
+			<li>
+				<dl>
+					<dt>
+						<img src="img/plane.jpg" alt="플레인">
+						<p class="m_rank">4</p>
+						<p class="m_hov">
+							<span>모두를 공포에 몰아넣은 하루...<br>
+								비행기 불시착은 시작에 불과했다!<br>
+								<br>
+								평소와 다를 것 없던 어느날,
+								기장'토렌스'는 비행기 운행 중
+								거대한 폭풍우를 만나 정체모를
+							</span>
+							<span>
+								<span>관람평 <span>0</span></span>
+							</span>
+						</p>
+					</dt>
+					<dd>
+						<button type="button"><img src="img/ico-heart-white.png" alt="하트"> <span>109</span></button>
+						<a href="#">예매</a>
+					</dd>
+				</dl>
+			</li>		
+		</ul>
+			
+			
+		<ul class="search_box">
+			<li>
+				<input type="text" placeholder="영화명을 입력해 주세요" title="영화검색">
+				<button>
+					<img src="img/ico-search-white.png" alt="검색버튼">
+				</button>
+			</li>
+			<li>
+				<a href="#"><img src="img/ico-schedule-main.png" alt="상영시간표"><span>상영시간표</span></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/ico-boxoffice-main.png" alt="박스오피스"><span>박스오피스</span></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/ico-quick-reserve-main.png" alt="빠른예매"><span>빠른예매</span></a>
+			</li>
+			
+		</ul>
+			
+			
+			
+			<i><img src="img/ico-mouse.png" alt="밑으로드래그"></i>
+			
+			
+		</div>
+		
+		
+		
+	</div>
+	
+</section>
+	
+
+
+</body>
+</html>
